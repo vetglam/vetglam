@@ -1497,3 +1497,119 @@ h1, h2, h3 { font-family: var(--font-title); line-height: 1.2; color: var(--gree
 
 .about__wave-top path { fill: var(--bg); }
 .about__wave-bottom path { fill: var(--bg); }
+
+/* =====================================================
+   AJUSTES DE CONTRASTE — MODO OSCURO
+   Corrige textos que quedaban demasiado oscuros en footer,
+   microchip y secciones con fondo oscuro.
+   ===================================================== */
+
+:root[data-theme="dark"] {
+  --bg:          #121814;
+  --sage:        #AEBE9B;
+  --sage-dark:   #D9E6C8;
+  --green:       #EDF6E6;
+  --beige:       #223025;
+  --text:        #F4EFE8;
+  --text-light:  #D8D0C5;
+  --white-warm:  #1A231C;
+  --shadow:      rgba(0, 0, 0, 0.34);
+  --shadow-md:   rgba(0, 0, 0, 0.50);
+}
+
+:root[data-theme="dark"] h1,
+:root[data-theme="dark"] h2,
+:root[data-theme="dark"] h3,
+:root[data-theme="dark"] .section-title,
+:root[data-theme="dark"] .hero__title,
+:root[data-theme="dark"] .about__title,
+:root[data-theme="dark"] .contact__info-title,
+:root[data-theme="dark"] .service-card__title,
+:root[data-theme="dark"] .pricing__card h3,
+:root[data-theme="dark"] .surgery__content .section-title {
+  color: #F4EFE8 !important;
+}
+
+:root[data-theme="dark"] .hero__title em,
+:root[data-theme="dark"] .section-label,
+:root[data-theme="dark"] .pricing__price,
+:root[data-theme="dark"] .header__brand-name {
+  color: #D9E6C8 !important;
+}
+
+:root[data-theme="dark"] .section-subtitle,
+:root[data-theme="dark"] .hero__subtitle,
+:root[data-theme="dark"] .about__text,
+:root[data-theme="dark"] .service-card__desc,
+:root[data-theme="dark"] .surgery__text,
+:root[data-theme="dark"] .contact__list p,
+:root[data-theme="dark"] .form-note,
+:root[data-theme="dark"] .benefit p,
+:root[data-theme="dark"] .grooming__benefit p,
+:root[data-theme="dark"] .pricing__note,
+:root[data-theme="dark"] .pricing__note p {
+  color: #D8D0C5 !important;
+}
+
+:root[data-theme="dark"] .microchip-sec,
+:root[data-theme="dark"] .footer {
+  background: linear-gradient(135deg, #18291E 0%, #203423 100%) !important;
+}
+
+:root[data-theme="dark"] .microchip-sec__title,
+:root[data-theme="dark"] .footer__brand-name,
+:root[data-theme="dark"] .footer__brand-name span,
+:root[data-theme="dark"] .footer__links h4,
+:root[data-theme="dark"] .footer__contact h4 {
+  color: #FFFDF8 !important;
+  opacity: 1 !important;
+}
+
+:root[data-theme="dark"] .microchip-sec__text,
+:root[data-theme="dark"] .footer__desc,
+:root[data-theme="dark"] .footer__links a,
+:root[data-theme="dark"] .footer__contact p,
+:root[data-theme="dark"] .footer__bottom p {
+  color: rgba(255, 253, 248, 0.88) !important;
+}
+
+:root[data-theme="dark"] .section-label.light {
+  color: #FFFDF8 !important;
+  background: rgba(255, 253, 248, 0.16) !important;
+}
+
+:root[data-theme="dark"] .btn--white {
+  background: #FFFDF8 !important;
+  color: #17301E !important;
+  border-color: #FFFDF8 !important;
+}
+
+:root[data-theme="dark"] .btn--white:hover {
+  background: #E8E3D4 !important;
+  color: #17301E !important;
+}
+
+:root[data-theme="dark"] .social-icon {
+  background: rgba(255, 253, 248, 0.14) !important;
+  color: #FFFDF8 !important;
+}
+
+:root[data-theme="dark"] .social-icon:hover {
+  background: rgba(255, 253, 248, 0.28) !important;
+}
+
+:root[data-theme="dark"] .footer__bottom {
+  border-top-color: rgba(255, 253, 248, 0.18) !important;
+}
+
+:root[data-theme="dark"] .nav__link,
+:root[data-theme="dark"] .hamburger span {
+  color: #F4EFE8 !important;
+  background-color: transparent;
+}
+
+@media (max-width: 768px) {
+  :root[data-theme="dark"] .nav {
+    background: #1A231C !important;
+  }
+}
