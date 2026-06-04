@@ -1,0 +1,548 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Veterinaria y peluquería canina/felina en Santiago. Consulta, vacunas, microchip, cirugías básicas y cuidado estético para perros y gatos." />
+  <meta name="keywords" content="veterinaria en Santiago, peluquería canina Santiago, peluquería felina Santiago, vacunas para perros y gatos, microchip mascotas Santiago, cuidado de mascotas Santiago" />
+  <meta name="author" content="Vet Glam Santiago" />
+  <meta property="og:title" content="Vet Glam Santiago | Veterinaria y Peluquería para Mascotas" />
+  <meta property="og:description" content="Veterinaria y peluquería canina/felina en Santiago. Consulta, vacunas, microchip, cirugías básicas y cuidado estético." />
+  <meta property="og:type" content="website" />
+  <title>Vet Glam | Veterinaria y Peluquería para Mascotas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <script>
+    (function () {
+      try {
+        var savedTheme = localStorage.getItem("vetglam-theme");
+        var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+        var theme = savedTheme || (prefersDark ? "dark" : "light");
+        document.documentElement.setAttribute("data-theme", theme);
+      } catch (e) {
+        document.documentElement.setAttribute("data-theme", "light");
+      }
+    })();
+  </script>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- ===== HEADER ===== -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="header__brand">
+        <div class="header__logo-wrap">
+          <img src="img/logo.png" alt="Vet Glam logo" class="header__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="header__logo-placeholder" style="display:none;">
+            <span class="paw-icon">🐾</span>
+          </div>
+        </div>
+        <div class="header__brand-text">
+          <span class="header__brand-name">Vet Glam</span>
+        </div>
+      </a>
+
+      <nav class="nav" id="nav">
+        <ul class="nav__list">
+          <li><a href="#inicio" class="nav__link">Inicio</a></li>
+          <li><a href="#servicios" class="nav__link">Servicios</a></li>
+          <li><a href="#nosotros" class="nav__link">Nosotros</a></li>
+          <li><a href="#peluqueria" class="nav__link">Peluquería</a></li>
+          <li><a href="#microchip" class="nav__link">Microchip</a></li>
+          <li><a href="#cirugias" class="nav__link">Cirugías</a></li>
+          <li><a href="#precios" class="nav__link">Precios</a></li>
+          <li><a href="#contacto" class="nav__link">Contacto</a></li>
+        </ul>
+      </nav>
+
+      <a href="#" class="btn btn--whatsapp header__cta" id="headerWhatsapp">
+        <span class="btn__icon">
+          <svg viewBox="0 0 24 24" fill="currentColor" width="16" height="16"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.11.549 4.09 1.505 5.808L.057 23.804a.5.5 0 00.61.637l6.197-1.488A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.63-.5-5.15-1.37l-.37-.22-3.8.913.944-3.698-.24-.39A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+        </span>
+        Agendar por WhatsApp
+      </a>
+
+      <button class="theme-toggle" id="themeToggle" type="button" aria-label="Cambiar a modo oscuro" aria-pressed="false">
+        <span class="theme-toggle__icon" aria-hidden="true">🌙</span>
+        <span class="theme-toggle__text">Oscuro</span>
+      </button>
+
+      <button class="hamburger" id="hamburger" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="inicio">
+    <div class="hero__bg">
+      <img src="img/hero-mascotas.jpg" alt="Mascotas felices en Vet Glam" class="hero__img" onerror="this.style.display='none';" />
+      <div class="hero__overlay"></div>
+    </div>
+    <div class="hero__decor">
+      <span class="decor-paw p1">🐾</span>
+      <span class="decor-paw p2">🐾</span>
+      <span class="decor-heart h1">♥</span>
+      <span class="decor-heart h2">♥</span>
+      <span class="decor-leaf l1">🌿</span>
+    </div>
+    <div class="container hero__inner">
+      <div class="hero__content animate-in">
+        <div class="hero__tag">
+          <span class="tag-dot"></span>Veterinaria &amp; Peluquería en Santiago
+        </div>
+        <h1 class="hero__title">
+          Cuidamos la salud<br />y belleza de<br /><em>tu mascota</em>
+        </h1>
+        <p class="hero__subtitle">
+          Atención veterinaria, peluquería canina y felina, vacunas y cuidado estético para perros y gatos.
+        </p>
+        <div class="hero__actions">
+          <a href="#" class="btn btn--primary" id="heroWhatsapp">Agendar hora</a>
+          <a href="#servicios" class="btn btn--outline">Ver servicios</a>
+        </div>
+        <div class="hero__badges">
+          <div class="badge"><span>✓</span> Atención profesional</div>
+          <div class="badge"><span>🐶🐱</span> Perros y gatos</div>
+          <div class="badge"><span>💬</span> Agenda por WhatsApp</div>
+        </div>
+      </div>
+      <div class="hero__visual animate-in delay-2">
+        <div class="hero__image-frame">
+          <img src="img/hero-mascotas.jpg" alt="Mascota atendida en Vet Glam" class="hero__frame-img" onerror="this.style.display='none'; this.parentElement.classList.add('no-img');" />
+          <div class="hero__frame-placeholder">
+            <div class="placeholder-animal">🐶</div>
+            <p>Mascota feliz</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#F8F6EF"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== SERVICIOS ===== -->
+  <section class="services" id="servicios">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">¿Qué ofrecemos?</span>
+        <h2 class="section-title">Nuestros servicios</h2>
+        <p class="section-subtitle">Todo lo que tu mascota necesita en un solo lugar, con cariño, cuidado y atención profesional.</p>
+      </div>
+      <div class="services__grid">
+
+        <article class="service-card animate-in">
+          <div class="service-card__img-wrap">
+            <img src="img/consulta.jpg" alt="Consulta veterinaria" class="service-card__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="service-card__placeholder" style="display:none;"><span>🩺</span></div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__icon">🩺</div>
+            <h3 class="service-card__title">Consulta veterinaria</h3>
+            <p class="service-card__desc">Evaluación general, diagnóstico y orientación profesional para cuidar la salud de tu mascota.</p>
+            <a href="#" class="btn btn--sm service-whatsapp" data-msg="Hola, quiero consultar sobre la consulta veterinaria en Vet Glam.">Consultar</a>
+          </div>
+        </article>
+
+        <article class="service-card animate-in delay-1">
+          <div class="service-card__img-wrap">
+            <img src="img/vacunas.jpg" alt="Vacunas para perros y gatos" class="service-card__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="service-card__placeholder" style="display:none;"><span>💉</span></div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__icon">💉</div>
+            <h3 class="service-card__title">Vacunas</h3>
+            <p class="service-card__desc">Planes de vacunación para perros y gatos, según edad, especie y necesidad.</p>
+            <a href="#" class="btn btn--sm service-whatsapp" data-msg="Hola, quiero consultar sobre vacunas para mi mascota en Vet Glam.">Consultar</a>
+          </div>
+        </article>
+
+        <article class="service-card animate-in">
+          <div class="service-card__img-wrap">
+            <img src="img/peluqueria.jpg" alt="Peluquería canina y felina" class="service-card__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="service-card__placeholder" style="display:none;"><span>✂️</span></div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__icon">✂️</div>
+            <h3 class="service-card__title">Peluquería</h3>
+            <p class="service-card__desc">Baños, cortes, limpieza de oídos, corte de uñas y cuidado estético para perros y gatos.</p>
+            <a href="#" class="btn btn--sm service-whatsapp" data-msg="Hola, quiero agendar una hora de peluquería en Vet Glam.">Consultar</a>
+          </div>
+        </article>
+
+        <article class="service-card animate-in delay-1">
+          <div class="service-card__img-wrap">
+            <img src="img/microchip.jpg" alt="Microchip para mascotas" class="service-card__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="service-card__placeholder" style="display:none;"><span>📡</span></div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__icon">📡</div>
+            <h3 class="service-card__title">Microchip</h3>
+            <p class="service-card__desc">Implantación y verificación de microchip para facilitar la identificación de tu mascota.</p>
+            <a href="#" class="btn btn--sm service-whatsapp" data-msg="Hola, quiero consultar sobre microchip en Vet Glam Antofagasta.">Consultar</a>
+          </div>
+        </article>
+
+        <article class="service-card animate-in delay-2">
+          <div class="service-card__img-wrap">
+            <img src="img/cirugias.jpg" alt="Cirugías veterinarias básicas" class="service-card__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="service-card__placeholder" style="display:none;"><span>🏥</span></div>
+          </div>
+          <div class="service-card__body">
+            <div class="service-card__icon">🏥</div>
+            <h3 class="service-card__title">Cirugías básicas</h3>
+            <p class="service-card__desc">Procedimientos menores y cirugías con evaluación veterinaria previa.</p>
+            <a href="#" class="btn btn--sm service-whatsapp" data-msg="Hola, quiero consultar sobre cirugías en Vet Glam.">Consultar</a>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== NOSOTROS ===== -->
+  <section class="about" id="nosotros">
+    <div class="about__wave-top">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C480,60 960,0 1440,30 L1440,0 L0,0 Z" fill="#F8F6EF"/></svg>
+    </div>
+    <div class="container about__inner">
+      <div class="about__image animate-in">
+        <div class="about__img-frame">
+          <img src="img/nosotros.jpg" alt="Equipo veterinario de Vet Glam" class="about__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="about__img-placeholder" style="display:none;"><span>🏥</span><p>Nuestro equipo</p></div>
+          <div class="about__img-deco">🐾</div>
+        </div>
+      </div>
+      <div class="about__content animate-in delay-1">
+        <span class="section-label">¿Quiénes somos?</span>
+        <h2 class="section-title about__title">Veterinaria cercana, responsable y con amor por los animales</h2>
+        <p class="about__text">En Vet Glam nos dedicamos al cuidado integral de perros y gatos, combinando atención veterinaria, higiene, estética y acompañamiento cercano para cada familia. Nuestro objetivo es que cada mascota reciba un trato respetuoso, cariñoso y profesional, porque sabemos que son parte importante de tu vida.</p>
+        <div class="about__benefits">
+          <div class="benefit">
+            <div class="benefit__icon">🎯</div>
+            <div>
+              <strong>Atención personalizada</strong>
+              <p>Cada mascota es única y recibe cuidado según sus necesidades específicas.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon">🐶🐱</div>
+            <div>
+              <strong>Experiencia con perros y gatos</strong>
+              <p>Especializados en el cuidado de caninos y felinos de todas las razas y edades.</p>
+            </div>
+          </div>
+          <div class="benefit">
+            <div class="benefit__icon">💬</div>
+            <div>
+              <strong>Comunicación directa por WhatsApp</strong>
+              <p>Agenda rápido, consulta dudas y recibe atención sin complicaciones.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="about__wave-bottom">
+      <svg viewBox="0 0 1440 60" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"><path d="M0,30 C480,0 960,60 1440,30 L1440,60 L0,60 Z" fill="#F8F6EF"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== PELUQUERÍA ===== -->
+  <section class="grooming" id="peluqueria">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Estética &amp; Higiene</span>
+        <h2 class="section-title">Peluquería canina y felina</h2>
+        <p class="section-subtitle">Cuidamos la higiene y presentación de tu mascota con baños, cortes según necesidad, corte de uñas, limpieza de oídos, cepillado y atención cuidadosa.</p>
+      </div>
+      <div class="grooming__inner">
+        <div class="grooming__visual animate-in">
+          <div class="grooming__img-wrap">
+            <img src="img/peluqueria.jpg" alt="Peluquería canina y felina en Vet Glam" class="grooming__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+            <div class="grooming__placeholder" style="display:none;"><span>✂️</span><p>Peluquería Glam</p></div>
+          </div>
+        </div>
+        <div class="grooming__benefits animate-in delay-1">
+          <div class="grooming__benefit">
+            <span class="gb-icon">🧴</span>
+            <div>
+              <strong>Shampoo adecuado para mascotas</strong>
+              <p>Productos dermatológicamente seguros y amigables con la piel de tu mascota.</p>
+            </div>
+          </div>
+          <div class="grooming__benefit">
+            <span class="gb-icon">🌟</span>
+            <div>
+              <strong>Personal con experiencia</strong>
+              <p>Equipo capacitado para manejar perros y gatos con calma y respeto.</p>
+            </div>
+          </div>
+          <div class="grooming__benefit">
+            <span class="gb-icon">💚</span>
+            <div>
+              <strong>Atención delicada y responsable</strong>
+              <p>Cuidamos el bienestar emocional de tu mascota durante todo el proceso.</p>
+            </div>
+          </div>
+          <div class="grooming__benefit">
+            <span class="gb-icon">📅</span>
+            <div>
+              <strong>Ideal para mantener la higiene todo el año</strong>
+              <p>Baños regulares, control de pelaje y presentación siempre impecable.</p>
+            </div>
+          </div>
+          <a href="#" class="btn btn--primary grooming-whatsapp" style="margin-top:1.5rem;">Agendar peluquería</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== MICROCHIP ===== -->
+  <section class="microchip-sec" id="microchip">
+    <div class="container microchip-sec__inner animate-in">
+      <div class="microchip-sec__content">
+        <span class="section-label light">Identificación</span>
+        <h2 class="microchip-sec__title">Implantación de microchip</h2>
+        <p class="microchip-sec__text">Ofrecemos servicio de implantación y verificación de microchip para facilitar la identificación de tu mascota y apoyar el cumplimiento de la normativa vigente.</p>
+        <a href="#" class="btn btn--white" id="microchipWhatsapp">Agendar microchip</a>
+      </div>
+      <div class="microchip-sec__visual">
+        <div class="microchip-icon-wrap">
+          <img src="img/microchip.jpg" alt="Microchip para mascotas" class="microchip-photo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="microchip-placeholder" style="display:none;"><span>📡</span><p>Microchip</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CIRUGÍAS ===== -->
+  <section class="surgery" id="cirugias">
+    <div class="container surgery__inner animate-in">
+      <div class="surgery__visual">
+        <div class="surgery__img-wrap">
+          <img src="img/cirugias.jpg" alt="Cirugías veterinarias en Vet Glam" class="surgery__img" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="surgery__placeholder" style="display:none;"><span>🏥</span><p>Cirugías y procedimientos</p></div>
+        </div>
+      </div>
+      <div class="surgery__content">
+        <span class="section-label">Procedimientos</span>
+        <h2 class="section-title">Cirugías y procedimientos</h2>
+        <p class="surgery__text">Realizamos cirugías básicas como esterilizaciones, castraciones, suturas y evaluación de procedimientos menores, siempre con hora agendada y revisión veterinaria previa.</p>
+        <div class="surgery__note">
+          <span class="surgery__note-icon">⚠️</span>
+          <p>Cada procedimiento requiere evaluación previa para resguardar la seguridad de tu mascota.</p>
+        </div>
+        <a href="#" class="btn btn--primary surgery-whatsapp">Consultar sobre cirugías</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRECIOS ===== -->
+  <section class="pricing" id="precios">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Transparencia</span>
+        <h2 class="section-title">Valores referenciales</h2>
+        <p class="section-subtitle">Valores referenciales. Consultar disponibilidad y precio final según el caso.</p>
+      </div>
+      <div class="pricing__grid animate-in">
+        <div class="pricing__card">
+          <div class="pricing__icon">🩺</div>
+          <h3>Consulta veterinaria</h3>
+          <div class="pricing__price">desde $8.000</div>
+        </div>
+        <div class="pricing__card">
+          <div class="pricing__icon">✂️</div>
+          <h3>Peluquería</h3>
+          <div class="pricing__price">desde $13.000</div>
+        </div>
+        <div class="pricing__card">
+          <div class="pricing__icon">📡</div>
+          <h3>Microchip</h3>
+          <div class="pricing__price">desde $8.000</div>
+        </div>
+        <div class="pricing__card">
+          <div class="pricing__icon">💉</div>
+          <h3>Vacunas</h3>
+          <div class="pricing__price">consultar según tipo</div>
+        </div>
+        <div class="pricing__card">
+          <div class="pricing__icon">🏥</div>
+          <h3>Cirugías</h3>
+          <div class="pricing__price">evaluación previa</div>
+        </div>
+      </div>
+      <div class="pricing__note animate-in">
+        <span>📋</span>
+        <p>Los valores indicados son referenciales. El precio final puede variar según el tamaño, raza, edad y estado de salud de tu mascota. Consulta directamente para obtener un presupuesto personalizado.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACTO ===== -->
+  <section class="contact" id="contacto">
+    <div class="container">
+      <div class="section-header animate-in">
+        <span class="section-label">Escríbenos</span>
+        <h2 class="section-title">Agenda la atención de tu mascota</h2>
+        <p class="section-subtitle">Estamos aquí para ayudarte. Contáctanos por WhatsApp o completa el formulario y te respondemos a la brevedad.</p>
+      </div>
+      <div class="contact__inner">
+        <div class="contact__info animate-in">
+          <h3 class="contact__info-title">Información de contacto</h3>
+          <ul class="contact__list">
+            <li>
+              <span class="contact__icon">📍</span>
+              <div>
+                <strong>Dirección</strong>
+                <!-- EDITAR: reemplazar con dirección real -->
+                <p>Antofagasta 2820, Santiago Centro</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon">📞</span>
+              <div>
+                <strong>Teléfono</strong>
+                <!-- EDITAR: reemplazar con teléfono real -->
+                <p>+56226842732</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon">💬</span>
+              <div>
+                <strong>WhatsApp</strong>
+                <!-- EDITAR: reemplazar con número real -->
+                <p>+56981302056</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon">📧</span>
+              <div>
+                <strong>Correo electrónico</strong>
+                <!-- EDITAR: reemplazar con correo real -->
+                <p>aleuvet@hotmail.com</p>
+              </div>
+            </li>
+            <li>
+              <span class="contact__icon">🕐</span>
+              <div>
+                <strong>Horario de atención</strong>
+                <!-- EDITAR: reemplazar con horario real -->
+                <p>Lunes a Viernes: 9:00 – 19:00 hrs<br />Sábado: 9:00 – 14:00 hrs</p>
+              </div>
+            </li>
+          </ul>
+          <a href="#" class="btn btn--primary btn--full" id="contactWhatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18" style="margin-right:6px;"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.11.549 4.09 1.505 5.808L.057 23.804a.5.5 0 00.61.637l6.197-1.488A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.63-.5-5.15-1.37l-.37-.22-3.8.913.944-3.698-.24-.39A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+            Agendar por WhatsApp
+          </a>
+          <!-- Mapa Google Maps: EDITAR el src con tu dirección -->
+          <div class="contact__map">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3328.3332738524236!2d-70.67456782352046!3d-33.46667289834452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9662c4e19edf8f83%3A0x178187900e6d5f60!2sAntofagasta%202820%2C%20Santiago%2C%20Regi%C3%B3n%20Metropolitana!5e0!3m2!1ses-419!2scl!4v1780527373239!5m2!1ses-419!2scl"
+              width="100%" height="200" style="border:0; border-radius:12px;" allowfullscreen=""
+              loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+              title="Ubicación Vet Glam"></iframe>
+          </div>
+        </div>
+
+        <div class="contact__form-wrap animate-in delay-1">
+          <h3 class="contact__info-title">Envíanos un mensaje</h3>
+          <div class="contact__form">
+            <div class="form-group">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="nombre" placeholder="Tu nombre completo" autocomplete="name" />
+            </div>
+            <div class="form-group">
+              <label for="telefono">Teléfono</label>
+              <input type="tel" id="telefono" name="telefono" placeholder="+56 9 XXXX XXXX" autocomplete="tel" />
+            </div>
+            <div class="form-group">
+              <label for="email">Correo electrónico</label>
+              <input type="email" id="email" name="email" placeholder="tucorreo@email.com" autocomplete="email" />
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Mensaje</label>
+              <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu consulta o cuéntanos sobre tu mascota..."></textarea>
+            </div>
+            <button type="button" class="btn btn--primary btn--full" id="sendFormWhatsapp">
+              Enviar por WhatsApp
+            </button>
+            <p class="form-note">Al enviar, serás redirigido a WhatsApp con tu mensaje.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#inicio" class="footer__brand-link">
+          <img src="img/logo.png" alt="Logo Vet Glam" class="footer__logo" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';" />
+          <div class="footer__logo-placeholder" style="display:none;"><span>🐾</span></div>
+          <span class="footer__brand-name">Vet Glam <span></span></span>
+        </a>
+        <p class="footer__desc">Veterinaria y peluquería canina/felina dedicada al bienestar, salud y cuidado de perros y gatos en Santiago.</p>
+        <div class="footer__social">
+          <!-- EDITAR: reemplazar hrefs con tus redes sociales reales -->
+          <a href="#" class="social-icon" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
+          </a>
+          <a href="#" class="social-icon" aria-label="WhatsApp" id="footerWhatsapp">
+            <svg viewBox="0 0 24 24" fill="currentColor" width="18" height="18"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.11.549 4.09 1.505 5.808L.057 23.804a.5.5 0 00.61.637l6.197-1.488A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.63-.5-5.15-1.37l-.37-.22-3.8.913.944-3.698-.24-.39A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+          </a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4>Navegación</h4>
+        <ul>
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#peluqueria">Peluquería</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="footer__links">
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Consulta veterinaria</a></li>
+          <li><a href="#servicios">Vacunas</a></li>
+          <li><a href="#peluqueria">Peluquería</a></li>
+          <li><a href="#microchip">Microchip</a></li>
+          <li><a href="#cirugias">Cirugías</a></li>
+        </ul>
+      </div>
+      <div class="footer__contact">
+        <h4>Contacto</h4>
+        <!-- EDITAR: reemplazar con datos reales -->
+        <p>📍 Antofagasta 2820, Santiago, Chile</p>
+        <p>📞 +56 9 8130 2056</p>
+        <p>📧 aleuvet@hotmail.com.cl</p>
+        <p>🕐 Lun–Vie 9–19h · Sáb 9–14h</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p>© 2026 Vet Glam. Todos los derechos reservados. <span class="footer__paw">🐾</span></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ===== WHATSAPP FLOTANTE ===== -->
+  <a href="#" class="whatsapp-float" id="whatsappFloat" aria-label="Chatear por WhatsApp">
+    <svg viewBox="0 0 24 24" fill="currentColor" width="28" height="28"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.11.549 4.09 1.505 5.808L.057 23.804a.5.5 0 00.61.637l6.197-1.488A11.95 11.95 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 22c-1.87 0-3.63-.5-5.15-1.37l-.37-.22-3.8.913.944-3.698-.24-.39A9.956 9.956 0 012 12C2 6.477 6.477 2 12 2s10 4.477 10 10-4.477 10-10 10z"/></svg>
+    <span class="whatsapp-float__tooltip">¡Agéndate aquí!</span>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
